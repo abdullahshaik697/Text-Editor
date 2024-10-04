@@ -1,0 +1,52 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #433878;
+    padding: 20px;
+
+}
+
+.edit-area {
+    display: flex;
+    justify-content: center;
+    background-color: #8868cd;
+    height: 500px;
+
+
+}
+
+button {
+    background-color: #7e60bf;
+    color: #ffe1ff;
+    padding: 10px;
+    font-weight: 700;
+    border: none;
+}
+
+button:hover {
+    background-color: hotpink;
+
+}
+
+textarea {
+    margin-top: 10px;
+    height: 90%;
+    width: 70%;
+    font-size: 30px;
+}
+
+@media screen and (max-width:425px) {
+    .buttons-container {
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 90%;
+    }
+}

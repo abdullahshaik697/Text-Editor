@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor</title>
+</head>
+<body>
+    <div class="buttons-container">
+            <button id="font-increase" onclick="fontIncrease()">Font (+)</button>
+            <button id="font-decrease" onclick="fontDecrease()">Font (-)</button>
+            <button id="font-bold" onclick="boldFont()">Bold</button>
+            <button id="font-italic" onclick="italicFont()">Italic</button>
+            <button id="font-color" onclick="setColor()">Change Color</button>
+            <select id="font-family" onchange="setFamily()">
+                <option value="Arial">Arial</option>
+                <option value="Impact">Impact</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Tahoma">Tahoma</option>
+            </select>
+    </div>
+    <div class="edit-area">
+        <textarea id="mainTextArea"></textarea>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
